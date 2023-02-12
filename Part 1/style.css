@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+}
+
+.container {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.box {
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    animation-name: myanime;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+.b-1{
+animation-delay: 0.75s;
+}
+
+
+.b-2{
+    animation-delay: 1.5s;
+}
+
+
+.b-3{
+    animation-delay: 2.25s;
+}
+
+.b-4{
+    animation-delay: 3s;
+}
+/* @keyframes myanime {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: yellowgreen;
+    }
+} */
+
+/* @keyframes myanime {
+    0% {
+        background-color: aquamarine;
+    }
+    25% {
+        background-color: yellow;
+    }
+
+    75% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: aquamarine;
+    }
+} */
+
+@keyframes myanime {
+    0% {
+        left: 0;
+        top: 0;
+        background-color: red;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        left: 150px;
+        top: 0;
+        background-color: pink;
+        transform: rotate(180deg);
+    }
+
+    50% {
+        left: 150px;
+        top: 150px;
+        background-color: rgb(217, 255, 192);
+        transform: rotate(180deg);
+    }
+
+    75% {
+        left: 0;
+        top: 150px;
+        background-color: rgb(232, 255, 29);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+        background-color: red;
+        transform: rotate(0deg);
+    }
+}
